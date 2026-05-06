@@ -48,8 +48,8 @@ pet_wid = st.number_input("PetalWidthCm",min_value=0.0,step=0.1,value=3.5)
 # prediction button
 if st.button("Predict"):
     # file paths
-    scaler_path = 'Notebook/scaler.pkl'
-    model_path = 'Notebook/model.pkl'
+    scaler_path = 'notebook/scaler.pkl'
+    model_path = 'notebook/model.pkl'
 
     #call the predictions functions
     pred, max_prob = predict_species(sep_len,sep_width,pet_len,pet_wid,scaler_path,model_path)
